@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/Mach_Chia_Xung/Test_Chia_Xung_isim_beh.exe" -prj "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/Mach_Chia_Xung/Test_Chia_Xung_beh.prj" "work.Test_Chia_Xung" "work.glbl" 

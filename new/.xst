@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/new/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/new/xst"
+elaborate
+-ifn .prj
+-ifmt mixed

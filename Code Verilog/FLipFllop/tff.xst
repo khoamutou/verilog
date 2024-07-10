@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/mecha/Downloads/New folder/FLipFllop/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/mecha/Downloads/New folder/FLipFllop/xst"
+elaborate
+-ifn tff.prj
+-ifmt mixed

@@ -1,0 +1,2 @@
+verilog work "../Enocde2to4/Encoder2to4.v"
+verilog work "../Enocde2to4/test_encoder.v"

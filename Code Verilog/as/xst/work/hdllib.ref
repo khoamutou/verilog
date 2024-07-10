@@ -1,0 +1,3 @@
+MO tff NULL ../FLipFllop/FLipFlop.v vlg38/tff.bin 1652105782
+MO test_encoder NULL ../Enocde2to4/test_encoder.v vlg4F/test__encoder.bin 1652104963
+MO Encoder2to4 NULL ../Enocde2to4/Encoder2to4.v vlg65/_encoder2to4.bin 1652105252

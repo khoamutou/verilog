@@ -1,0 +1,28 @@
+Command line:
+   CK1HZ_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56037
+
+Mon May 30 23:08:05 2022
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5151.43 Meg
+
+ Total Signals          : 17
+ Total Nets             : 42
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 212
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5151.43 Meg
+
+Mon May 30 23:08:11 2022
+

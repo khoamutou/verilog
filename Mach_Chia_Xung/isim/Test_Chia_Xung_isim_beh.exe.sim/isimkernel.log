@@ -1,0 +1,28 @@
+Command line:
+   Test_Chia_Xung_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52397
+
+Tue May 31 14:16:39 2022
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5151.44 Meg
+
+ Total Signals          : 15
+ Total Nets             : 15
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 123
+
+ Total Simulation Time: 131.906 sec
+
+ Current Memory Usage: 4679.58 Meg
+
+Tue May 31 14:19:09 2022
+

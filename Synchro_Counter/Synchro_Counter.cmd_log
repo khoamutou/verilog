@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/Synchro_Counter/Synchro_Counter.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/Synchro_Counter/Synchro_Counter.syr" 

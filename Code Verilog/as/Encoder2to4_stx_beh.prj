@@ -1,0 +1,2 @@
+verilog isim_temp "../Enocde2to4/Encoder2to4.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

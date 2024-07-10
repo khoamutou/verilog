@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/mecha/Downloads/New folder/updown/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/mecha/Downloads/New folder/updown/xst"
+elaborate
+-ifn CounterUD.prj
+-ifmt mixed

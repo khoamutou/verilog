@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/chia_xung.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/chia_xung.syr" 
+vhdtdtfi -lib work C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/chia_xung.v -lang verilog -prj abc -o chia_xung.spl -module chia_xung -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e chia_xung.spl C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/chia_xung.sym 
+vhdtdtfi -lang verilog -prj abc -o C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/chia_xung.tfi -lib work C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc//chia_xung.v -module chia_xung -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

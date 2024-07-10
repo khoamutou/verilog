@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/mecha/Downloads/New folder/FLipFllop/T_FF.xst" -ofn "C:/Users/mecha/Downloads/New folder/FLipFllop/T_FF.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim T_FF.ngc T_FF_synthesis.v 

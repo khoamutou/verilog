@@ -1,0 +1,4 @@
+vhdtdtfi -lib work {C:/Users/mecha/Downloads/New folder/Enocde2to4/Encoder2to4.v} -lang verilog -prj as -o Encoder2to4.spl -module Encoder2to4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Encoder2to4.spl {C:/Users/mecha/Downloads/New folder/as/Encoder2to4.sym} 
+xst -intstyle ise -ifn "C:/Users/mecha/Downloads/New folder/as/Encoder2to4.xst" -ofn "C:/Users/mecha/Downloads/New folder/as/Encoder2to4.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/Downloads/New folder/as/Encoder2to4.xst" -ofn "C:/Users/mecha/Downloads/New folder/as/Encoder2to4.syr" 

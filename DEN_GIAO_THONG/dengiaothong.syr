@@ -1,0 +1,483 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: dengiaothong.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dengiaothong.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dengiaothong"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : dengiaothong
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "counter.v" in library work
+Compiling verilog file "clk_div.v" in library work
+Module <counter> compiled
+Compiling verilog file "dengiaothong.v" in library work
+Module <clk_div> compiled
+Module <dengiaothong> compiled
+No errors in compilation
+Analysis of file <"dengiaothong.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <dengiaothong> in library <work> with parameters.
+	D1V2 = "11"
+	D1X2 = "10"
+	V1D2 = "01"
+	X1D2 = "00"
+
+Analyzing hierarchy for module <clk_div> in library <work>.
+
+Analyzing hierarchy for module <counter> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <dengiaothong>.
+	D1V2 = 2'b11
+	D1X2 = 2'b10
+	V1D2 = 2'b01
+	X1D2 = 2'b00
+Module <dengiaothong> is correct for synthesis.
+ 
+Analyzing module <clk_div> in library <work>.
+Module <clk_div> is correct for synthesis.
+ 
+Analyzing module <counter> in library <work>.
+Module <counter> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_div>.
+    Related source file is "clk_div.v".
+    Found 1-bit register for signal <clk_out>.
+    Found 25-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clk_div> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "counter.v".
+    Found 7-bit up counter for signal <number>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <dengiaothong>.
+    Related source file is "dengiaothong.v".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <X> of Case statement line 40 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <X> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found finite state machine <FSM_0> for signal <X>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 6-bit latch for signal <LED>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <dengiaothong> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 25-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Latches                                              : 1
+ 6-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <X/FSM> on signal <X[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 2
+ 25-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Latches                                              : 1
+ 6-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <dengiaothong> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dengiaothong, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : dengiaothong.ngr
+Top Level Output File Name         : dengiaothong
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 125
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 25
+#      LUT2                        : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 11
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 22
+#      LUT4_D                      : 1
+#      MUXCY                       : 31
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 41
+#      FDC                         : 9
+#      FDE                         : 1
+#      FDR                         : 25
+#      LD                          : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 1
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       35  out of   4656     0%  
+ Number of Slice Flip Flops:             35  out of   9312     0%  
+ Number of 4 input LUTs:                 65  out of   9312     0%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    232     3%  
+    IOB Flip Flops:                       6
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+LED_not0001(LED_not0001117:O)      | NONE(*)(LED_0)          | 6     |
+clk                                | BUFGP                   | 28    |
+clk1hz/clk_out                     | NONE(counter68/number_0)| 7     |
+-----------------------------------+-------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 9     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.178ns (Maximum Frequency: 193.113MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.683ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.178ns (frequency: 193.113MHz)
+  Total number of paths / destination ports: 980 / 54
+-------------------------------------------------------------------------
+Delay:               5.178ns (Levels of Logic = 8)
+  Source:            clk1hz/cnt_5 (FF)
+  Destination:       clk1hz/cnt_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk1hz/cnt_5 to clk1hz/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  clk1hz/cnt_5 (clk1hz/cnt_5)
+     LUT1:I0->O            1   0.704   0.000  clk1hz/clk_out_cmp_eq0000_wg_cy<0>_rt (clk1hz/clk_out_cmp_eq0000_wg_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  clk1hz/clk_out_cmp_eq0000_wg_cy<0> (clk1hz/clk_out_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  clk1hz/clk_out_cmp_eq0000_wg_cy<1> (clk1hz/clk_out_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  clk1hz/clk_out_cmp_eq0000_wg_cy<2> (clk1hz/clk_out_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  clk1hz/clk_out_cmp_eq0000_wg_cy<3> (clk1hz/clk_out_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  clk1hz/clk_out_cmp_eq0000_wg_cy<4> (clk1hz/clk_out_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  clk1hz/clk_out_cmp_eq0000_wg_cy<5> (clk1hz/clk_out_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          26   0.331   1.260  clk1hz/clk_out_cmp_eq0000_wg_cy<6> (clk1hz/clk_out_cmp_eq0000)
+     FDR:R                     0.911          clk1hz/cnt_0
+    ----------------------------------------
+    Total                      5.178ns (3.296ns logic, 1.882ns route)
+                                       (63.7% logic, 36.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk1hz/clk_out'
+  Clock period: 5.176ns (frequency: 193.199MHz)
+  Total number of paths / destination ports: 77 / 7
+-------------------------------------------------------------------------
+Delay:               5.176ns (Levels of Logic = 3)
+  Source:            counter68/number_5 (FF)
+  Destination:       counter68/number_1 (FF)
+  Source Clock:      clk1hz/clk_out rising
+  Destination Clock: clk1hz/clk_out rising
+
+  Data Path: counter68/number_5 to counter68/number_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.591   0.886  counter68/number_5 (counter68/number_5)
+     LUT4:I3->O            1   0.704   0.424  counter68/number_cmp_eq00001_SW0 (N61)
+     LUT4_D:I3->O          9   0.704   0.855  counter68/number_cmp_eq00001 (counter68/number_cmp_eq0000)
+     LUT3:I2->O            1   0.704   0.000  counter68/Mcount_number_xor<1>11 (counter68/Mcount_number1)
+     FDC:D                     0.308          counter68/number_1
+    ----------------------------------------
+    Total                      5.176ns (3.011ns logic, 2.165ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.683ns (Levels of Logic = 1)
+  Source:            clk1hz/clk_out (FF)
+  Destination:       dem (PAD)
+  Source Clock:      clk rising
+
+  Data Path: clk1hz/clk_out to dem
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.591   0.820  clk1hz/clk_out (clk1hz/clk_out)
+     OBUF:I->O                 3.272          dem_OBUF (dem)
+    ----------------------------------------
+    Total                      4.683ns (3.863ns logic, 0.820ns route)
+                                       (82.5% logic, 17.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LED_not0001'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            LED_5 (LATCH)
+  Destination:       LED<5> (PAD)
+  Source Clock:      LED_not0001 falling
+
+  Data Path: LED_5 to LED<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  LED_5 (LED_5)
+     OBUF:I->O                 3.272          LED_5_OBUF (LED<5>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.25 secs
+ 
+--> 
+
+Total memory usage is 4515068 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

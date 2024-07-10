@@ -1,0 +1,6 @@
+verilog work "Mux41.v"
+verilog work "CounterUD.v"
+verilog work "Clock_div.v"
+verilog work "LED_Counter.v"
+verilog work "Testttt.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

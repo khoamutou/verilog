@@ -1,0 +1,86 @@
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc on_off.ucf -p xc3s500e-fg320-4 on_off.ngc on_off.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_off_map.ncd on_off.ngd on_off.pcf 
+par -w -intstyle ise -ol high -t 1 on_off_map.ncd on_off.ncd on_off.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_off.twx on_off.ncd -o on_off.twr on_off.pcf -ucf on_off.ucf 
+bitgen -intstyle ise -f on_off.ut on_off.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 on_off.ngc on_off.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_off_map.ncd on_off.ngd on_off.pcf 
+par -w -intstyle ise -ol high -t 1 on_off_map.ncd on_off.ncd on_off.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_off.twx on_off.ncd -o on_off.twr on_off.pcf 
+bitgen -intstyle ise -f on_off.ut on_off.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc on_off.ucf -p xc3s500e-fg320-4 on_off.ngc on_off.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_off_map.ncd on_off.ngd on_off.pcf 
+par -w -intstyle ise -ol high -t 1 on_off_map.ncd on_off.ncd on_off.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_off.twx on_off.ncd -o on_off.twr on_off.pcf -ucf on_off.ucf 
+bitgen -intstyle ise -f on_off.ut on_off.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc on_off.ucf -p xc3s500e-fg320-4 on_off.ngc on_off.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_off_map.ncd on_off.ngd on_off.pcf 
+par -w -intstyle ise -ol high -t 1 on_off_map.ncd on_off.ncd on_off.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_off.twx on_off.ncd -o on_off.twr on_off.pcf -ucf on_off.ucf 
+bitgen -intstyle ise -f on_off.ut on_off.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc on_off.ucf -p xc3s500e-fg320-4 on_off.ngc on_off.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_off_map.ncd on_off.ngd on_off.pcf 
+par -w -intstyle ise -ol high -t 1 on_off_map.ncd on_off.ncd on_off.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_off.twx on_off.ncd -o on_off.twr on_off.pcf -ucf on_off.ucf 
+bitgen -intstyle ise -f on_off.ut on_off.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc on_off.ucf -p xc3s500e-fg320-4 on_off.ngc on_off.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_off_map.ncd on_off.ngd on_off.pcf 
+par -w -intstyle ise -ol high -t 1 on_off_map.ncd on_off.ncd on_off.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_off.twx on_off.ncd -o on_off.twr on_off.pcf -ucf on_off.ucf 
+bitgen -intstyle ise -f on_off.ut on_off.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc on_off.ucf -p xc3s500e-fg320-4 on_off.ngc on_off.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_off_map.ncd on_off.ngd on_off.pcf 
+par -w -intstyle ise -ol high -t 1 on_off_map.ncd on_off.ncd on_off.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_off.twx on_off.ncd -o on_off.twr on_off.pcf -ucf on_off.ucf 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/abc/on_off.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc on_off.ucf -p xc3s500e-fg320-4 on_off.ngc on_off.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_off_map.ncd on_off.ngd on_off.pcf 
+par -w -intstyle ise -ol high -t 1 on_off_map.ncd on_off.ncd on_off.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_off.twx on_off.ncd -o on_off.twr on_off.pcf -ucf on_off.ucf 
+bitgen -intstyle ise -f on_off.ut on_off.ncd 

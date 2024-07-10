@@ -1,0 +1,3 @@
+verilog work "../Enocde2to4/Encoder2to4.v"
+verilog work "../Enocde2to4/test_encoder.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

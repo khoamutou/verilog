@@ -1,0 +1,12 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/mecha/Downloads/New folder/FLipFllop/tb_isim_beh.exe -prj C:/Users/mecha/Downloads/New folder/FLipFllop/tb_beh.prj work.tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/mecha/Downloads/New folder/FLipFllop/T.v" into library work
+Analyzing Verilog file "C:/Users/mecha/Downloads/New folder/FLipFllop/test.v" into library work
+ERROR:HDLCompiler:345 - "C:/Users/mecha/Downloads/New folder/FLipFllop/test.v" Line 44: Declarations not allowed in unnamed block
+WARNING:HDLCompiler:1490 - "C:/Users/mecha/Downloads/New folder/FLipFllop/test.v" Line 44: Loop valiable declaration is not allowed in this mode of verilog
+ERROR:HDLCompiler:815 - "C:/Users/mecha/Downloads/New folder/FLipFllop/test.v" Line 45: System function call random is not allowed here
+ERROR:HDLCompiler:598 - "C:/Users/mecha/Downloads/New folder/FLipFllop/test.v" Line 25: Module <tb> ignored due to previous errors.
+Verilog file C:/Users/mecha/Downloads/New folder/FLipFllop/test.v ignored due to errors

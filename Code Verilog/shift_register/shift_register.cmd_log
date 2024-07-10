@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/mecha/Downloads/New folder/shift_register/shift_register.xst" -ofn "C:/Users/mecha/Downloads/New folder/shift_register/shift_register.syr" 

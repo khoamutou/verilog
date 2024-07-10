@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/new/LED_Counter.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/new/LED_Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/new/LED_Counter.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/new/LED_Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/new/LED_Counter.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/new/LED_Counter.syr" 

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/mecha/Downloads/New folder/Enocde2to4/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/mecha/Downloads/New folder/Enocde2to4/xst"
+elaborate
+-ifn Encoder2to4.prj
+-ifmt mixed

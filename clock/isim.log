@@ -1,0 +1,14 @@
+ISim log file
+Running: C:\Users\mecha\OneDrive\Documents\STUDY\Verilog\clock\Test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/clock/Test_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/clock/Counter2Speed.v" Line 73.  For instance uut/clock1/, width 2 of formal port sel is not equal to width 1 of actual signal sel.
+WARNING: File "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/clock/Counter2Speed.v" Line 76.  For instance uut/LED/, width 8 of formal port out is not equal to width 1 of actual signal LED_Sang.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 1824989470 ns : File "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/clock/Test.v" Line 57

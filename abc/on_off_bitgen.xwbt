@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\mecha\OneDrive\Documents\STUDY\Verilog\abc\on_off.ncd
+OUTFILE=C:\Users\mecha\OneDrive\Documents\STUDY\Verilog\abc\on_off.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\mecha\OneDrive\Documents\STUDY\Verilog\abc
+LICENSE=ISE
+USER_INFO=212424028_0_0_108

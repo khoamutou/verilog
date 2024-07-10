@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/SPSO/Shift_SIPO.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/Verilog/SPSO/Shift_SIPO.syr" 

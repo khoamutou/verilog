@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/mecha/Downloads/New folder/LedLtoR/Test.xst" -ofn "C:/Users/mecha/Downloads/New folder/LedLtoR/Test.syr" 

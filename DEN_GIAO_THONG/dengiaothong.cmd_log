@@ -1,0 +1,61 @@
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dengiaothong.ucf -p xc3s500e-fg320-4 dengiaothong.ngc dengiaothong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o dengiaothong_map.ncd dengiaothong.ngd dengiaothong.pcf 
+par -w -intstyle ise -ol high -t 1 dengiaothong_map.ncd dengiaothong.ncd dengiaothong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml dengiaothong.twx dengiaothong.ncd -o dengiaothong.twr dengiaothong.pcf -ucf dengiaothong.ucf 
+bitgen -intstyle ise -f dengiaothong.ut dengiaothong.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dengiaothong.ucf -p xc3s500e-fg320-4 dengiaothong.ngc dengiaothong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o dengiaothong_map.ncd dengiaothong.ngd dengiaothong.pcf 
+par -w -intstyle ise -ol high -t 1 dengiaothong_map.ncd dengiaothong.ncd dengiaothong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml dengiaothong.twx dengiaothong.ncd -o dengiaothong.twr dengiaothong.pcf -ucf dengiaothong.ucf 
+bitgen -intstyle ise -f dengiaothong.ut dengiaothong.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dengiaothong.ucf -p xc3s500e-fg320-4 dengiaothong.ngc dengiaothong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o dengiaothong_map.ncd dengiaothong.ngd dengiaothong.pcf 
+par -w -intstyle ise -ol high -t 1 dengiaothong_map.ncd dengiaothong.ncd dengiaothong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml dengiaothong.twx dengiaothong.ncd -o dengiaothong.twr dengiaothong.pcf -ucf dengiaothong.ucf 
+bitgen -intstyle ise -f dengiaothong.ut dengiaothong.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dengiaothong.ucf -p xc3s500e-fg320-4 dengiaothong.ngc dengiaothong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o dengiaothong_map.ncd dengiaothong.ngd dengiaothong.pcf 
+par -w -intstyle ise -ol high -t 1 dengiaothong_map.ncd dengiaothong.ncd dengiaothong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml dengiaothong.twx dengiaothong.ncd -o dengiaothong.twr dengiaothong.pcf -ucf dengiaothong.ucf 
+bitgen -intstyle ise -f dengiaothong.ut dengiaothong.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dengiaothong.ucf -p xc3s500e-fg320-4 dengiaothong.ngc dengiaothong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o dengiaothong_map.ncd dengiaothong.ngd dengiaothong.pcf 
+par -w -intstyle ise -ol high -t 1 dengiaothong_map.ncd dengiaothong.ncd dengiaothong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml dengiaothong.twx dengiaothong.ncd -o dengiaothong.twr dengiaothong.pcf -ucf dengiaothong.ucf 
+bitgen -intstyle ise -f dengiaothong.ut dengiaothong.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dengiaothong.ucf -p xc3s500e-fg320-4 dengiaothong.ngc dengiaothong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o dengiaothong_map.ncd dengiaothong.ngd dengiaothong.pcf 
+par -w -intstyle ise -ol high -t 1 dengiaothong_map.ncd dengiaothong.ncd dengiaothong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml dengiaothong.twx dengiaothong.ncd -o dengiaothong.twr dengiaothong.pcf -ucf dengiaothong.ucf 
+bitgen -intstyle ise -f dengiaothong.ut dengiaothong.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dengiaothong.ucf -p xc3s500e-fg320-4 dengiaothong.ngc dengiaothong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o dengiaothong_map.ncd dengiaothong.ngd dengiaothong.pcf 
+par -w -intstyle ise -ol high -t 1 dengiaothong_map.ncd dengiaothong.ncd dengiaothong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml dengiaothong.twx dengiaothong.ncd -o dengiaothong.twr dengiaothong.pcf -ucf dengiaothong.ucf 
+bitgen -intstyle ise -f dengiaothong.ut dengiaothong.ncd 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+xst -intstyle ise -ifn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.xst" -ofn "C:/Users/mecha/OneDrive/Documents/STUDY/TT_TKHT_VMTH/BUOI_6/DEN_GIAO_THONG/dengiaothong.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dengiaothong.ucf -p xc3s500e-fg320-4 dengiaothong.ngc dengiaothong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o dengiaothong_map.ncd dengiaothong.ngd dengiaothong.pcf 
+par -w -intstyle ise -ol high -t 1 dengiaothong_map.ncd dengiaothong.ncd dengiaothong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml dengiaothong.twx dengiaothong.ncd -o dengiaothong.twr dengiaothong.pcf -ucf dengiaothong.ucf 
+bitgen -intstyle ise -f dengiaothong.ut dengiaothong.ncd 
